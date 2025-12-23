@@ -1,0 +1,123 @@
+# Beispiel-Konfiguration für die Überarbeitung von Dissertation-Abschnitten
+# mit manubot-ai-editor
+#
+# Diese Datei sollte in das ci/ Verzeichnis Ihres Manubot-Manuskripts kopiert werden
+# und als ai-revision-prompts.yaml umbenannt werden.
+
+prompts:
+  dissertation_abstract: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite den folgenden Absatz aus dem Abstract einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Der Text wissenschaftlich-formal und akademisch ist
+    - Alle Zitate im Format (Autor Jahr) korrekt sind
+    - Der Text flüssigen deutschen Fließtext darstellt (keine Aufzählungen)
+    - Die maximale Länge von 250 Wörtern eingehalten wird
+    - Das Abstract Ziel, Methode, Ergebnisse und Schlussfolgerungen zusammenfasst
+    
+    Absatz: {paragraph_text}
+    
+    Überarbeiteter Absatz:
+
+  dissertation_einleitung: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite den folgenden Absatz aus der Einleitung einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Die Problemstellung und Forschungsfrage klar dargestellt sind
+    - Alle Zitate im Format (Autor Jahr) korrekt sind
+    - Der Text wissenschaftlich-formal und akademisch ist
+    - Jede faktische Aussage mit mindestens einem Zitat belegt ist
+    - Der Text flüssigen deutschen Fließtext darstellt (keine Aufzählungen)
+    - Übergangssätze für flüssige Lesbarkeit verwendet werden
+    
+    Absatz: {paragraph_text}
+    
+    Überarbeiteter Absatz:
+
+  dissertation_literaturreview: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite den folgenden Absatz aus dem theoretischen Rahmen / Literaturreview einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Mindestens 5 aktuelle PubMed-Quellen zitiert werden
+    - Alle Zitate im Format (Autor Jahr) korrekt sind
+    - Der Text wissenschaftlich-formal und akademisch ist
+    - Jede faktische Aussage mit mindestens einem Zitat belegt ist
+    - Der Text flüssigen deutschen Fließtext darstellt (keine Aufzählungen)
+    - Die Quellen logisch und strukturiert präsentiert werden
+    
+    Absatz: {paragraph_text}
+    
+    Überarbeiteter Absatz:
+
+  dissertation_methodik: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite den folgenden Absatz aus der Methodik einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Technische Details präzise und vollständig sind
+    - Alle Zitate im Format (Autor Jahr) korrekt sind
+    - Der Text wissenschaftlich-formal und akademisch ist
+    - Mathematische Ausdrücke und Gleichungen korrekt erhalten bleiben
+    - Der Text flüssigen deutschen Fließtext darstellt (keine Aufzählungen)
+    
+    Absatz: {paragraph_text}
+    
+    Überarbeiteter Absatz:
+
+  dissertation_ergebnisse: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite den folgenden Absatz aus dem Ergebnisteil einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Die Ergebnisse logisch nachvollziehbar dargestellt sind
+    - Alle Zitate im Format (Autor Jahr) korrekt sind
+    - Der Text wissenschaftlich-formal und akademisch ist
+    - Referenzen zu Abbildungen und Tabellen erhalten bleiben
+    - Der Text flüssigen deutschen Fließtext darstellt (keine Aufzählungen)
+    - Die Ergebnisse klar und präzise beschrieben werden
+    
+    Absatz: {paragraph_text}
+    
+    Überarbeiteter Absatz:
+
+  dissertation_diskussion: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite den folgenden Absatz aus der Diskussion einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Die Einordnung in den Forschungskontext klar ist
+    - Limitationen und Ausblick angemessen dargestellt sind
+    - Alle Zitate im Format (Autor Jahr) korrekt sind
+    - Der Text wissenschaftlich-formal und akademisch ist
+    - Der Text flüssigen deutschen Fließtext darstellt (keine Aufzählungen)
+    - Die Diskussion die Ergebnisse kritisch einordnet
+    
+    Absatz: {paragraph_text}
+    
+    Überarbeiteter Absatz:
+
+  dissertation_schluss: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite den folgenden Absatz aus dem Schluss einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Die Kernergebnisse klar zusammengefasst sind
+    - Der Beitrag zur Forschung deutlich wird
+    - Alle Zitate im Format (Autor Jahr) korrekt sind
+    - Der Text wissenschaftlich-formal und akademisch ist
+    - Der Text flüssigen deutschen Fließtext darstellt (keine Aufzählungen)
+    
+    Absatz: {paragraph_text}
+    
+    Überarbeiteter Absatz:
+
+  dissertation_literatur: |
+    Du bist ein hochqualifizierter KI-gestützter wissenschaftlicher Schreibassistent.
+    Überarbeite das folgende Literaturverzeichnis einer Dissertation im APA-7-Stil.
+    Stelle sicher, dass:
+    - Alle Einträge alphabetisch sortiert sind
+    - Vollständige DOI-Angaben vorhanden sind
+    - Das Format vollständig APA-7-konform ist
+    - Alle Autorennamen korrekt formatiert sind
+    - Publikationsjahre korrekt angegeben sind
+    
+    Literaturverzeichnis: {paragraph_text}
+    
+    Überarbeitetes Literaturverzeichnis:
+

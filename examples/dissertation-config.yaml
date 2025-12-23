@@ -1,0 +1,94 @@
+# Beispiel-Konfiguration für die Zuordnung von Prompts zu Dateien
+# für die Überarbeitung von Dissertation-Abschnitten mit manubot-ai-editor
+#
+# Diese Datei sollte in das ci/ Verzeichnis Ihres Manubot-Manuskripts kopiert werden
+# und als ai-revision-config.yaml umbenannt werden.
+#
+# Die Dateinamen werden als reguläre Ausdrücke (Regex) interpretiert.
+# Passen Sie die Muster an Ihre tatsächlichen Dateinamen an.
+
+files:
+  # Dateien, die ignoriert werden sollen
+  ignore:
+    - ^00\.front-matter\.md$
+    - ^90\.back-matter\.md$
+    - ^.*\.(png|jpg|jpeg|svg|pdf)$
+
+  # Zuordnung von Dateien zu Prompts
+  matchings:
+    # Abstract
+    - files:
+        - ^.*abstract.*\.md$
+        - ^.*Abstract.*\.md$
+        - ^01\.abstract\.md$
+      prompt: dissertation_abstract
+
+    # Einleitung
+    - files:
+        - ^.*einleitung.*\.md$
+        - ^.*Einleitung.*\.md$
+        - ^.*introduction.*\.md$
+        - ^02\.introduction\.md$
+        - ^03\.background\.md$
+      prompt: dissertation_einleitung
+
+    # Theoretischer Rahmen / Literaturreview
+    - files:
+        - ^.*literatur.*review.*\.md$
+        - ^.*Literatur.*review.*\.md$
+        - ^.*theoretischer.*rahmen.*\.md$
+        - ^.*Theoretischer.*Rahmen.*\.md$
+        - ^.*background.*\.md$
+      prompt: dissertation_literaturreview
+
+    # Methodik
+    - files:
+        - ^.*methodik.*\.md$
+        - ^.*Methodik.*\.md$
+        - ^.*methods.*\.md$
+        - ^.*Methods.*\.md$
+        - ^05\.material.*methods\.md$
+        - ^08\..*methods.*\.md$
+      prompt: dissertation_methodik
+
+    # Ergebnisse
+    - files:
+        - ^.*ergebnisse.*\.md$
+        - ^.*Ergebnisse.*\.md$
+        - ^.*results.*\.md$
+        - ^.*Results.*\.md$
+        - ^06\.results\.md$
+        - ^04\..*results.*\.md$
+      prompt: dissertation_ergebnisse
+
+    # Diskussion
+    - files:
+        - ^.*diskussion.*\.md$
+        - ^.*Diskussion.*\.md$
+        - ^.*discussion.*\.md$
+        - ^.*Discussion.*\.md$
+        - ^07\.discussion.*\.md$
+      prompt: dissertation_diskussion
+
+    # Schluss
+    - files:
+        - ^.*schluss.*\.md$
+        - ^.*Schluss.*\.md$
+        - ^.*conclusion.*\.md$
+        - ^.*Conclusion.*\.md$
+        - ^.*zusammenfassung.*\.md$
+      prompt: dissertation_schluss
+
+    # Literaturverzeichnis
+    - files:
+        - ^.*literatur.*\.md$
+        - ^.*Literatur.*\.md$
+        - ^.*references.*\.md$
+        - ^.*References.*\.md$
+        - ^08\.references\.md$
+        - ^10\.references\.md$
+      prompt: dissertation_literatur
+
+  # Standard-Prompt für alle anderen Dateien
+  default_prompt: dissertation_einleitung
+

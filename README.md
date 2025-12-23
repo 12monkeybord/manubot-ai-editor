@@ -67,6 +67,8 @@ Manubot rootstock comes with several default, general-purpose prompts so that yo
 But you can also define your own prompts, apply them to specific content, and control other behavior using YAML configuration files that you include with your manuscript.
 See [docs/custom-prompts.md](https://github.com/manubot/manubot-ai-editor/blob/main/docs/custom-prompts.md) for more information.
 
+For a comprehensive best-practice guide on creating complete dissertations with APA-7 style citations in German, see [docs/dissertation-prompt-design.md](https://github.com/manubot/manubot-ai-editor/blob/main/docs/dissertation-prompt-design.md).
+
 ### Running the editor
 
 1. In your forks's "▶️ Actions" tab, go to the `ai-revision` workflow.
